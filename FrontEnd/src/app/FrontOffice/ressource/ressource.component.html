@@ -1,0 +1,80 @@
+<!--
+<div *ngIf="Ressources && Ressources.length > 0; else noDataTemplate">
+  <table>
+    <thead>
+      <tr>
+        <th>Date_ajout</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Content</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let ressource of Ressources">
+        <td>{{ ressource.date_ajout }}</td>
+        <td>{{ ressource.description }}</td>
+        <td>{{ ressource.type }}</td>
+        <td>
+          <a [href]="downloadFile(ressource)" download>Download {{ getFileName(ressource) }}</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<ng-template #noDataTemplate>
+  <p>No Resources found.</p>
+</ng-template>
+<router-outlet></router-outlet> -->
+<!-- Hero section -->
+<!-- Favicon -->
+<link href="img/favicon.ico" rel="shortcut icon"/>
+<link rel="stylesheet" href="/assets/FrontOffice/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/assets/FrontOffice/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="/assets/FrontOffice/css/owl.carousel.css"/>
+<link rel="stylesheet" href="/assets/FrontOffice/css/style.css"/>
+
+
+<router-outlet></router-outlet>
+<app-header></app-header>
+<div *ngIf="Ressources && Ressources.length > 0;">
+  <div class="row">
+    <div class="mix col-lg-3 col-md-4 col-sm-6 web" *ngFor="let ressource of Ressources">
+      <div class="course-item">
+        <div class="course-thumb set-bg" style="background-image: url('/assets/FrontOffice/img/pdf.png')">
+          <!-- Default PDF icon -->
+          <div class="price"><a [href]="downloadFile(ressource)" download style="color: white;">Download</a></div>
+        </div>
+        <div class="course-info">
+          <div class="course-text">
+            <h5>{{ ressource.description }}</h5>
+            <p>Type: {{ ressource.type }}</p>
+            <!-- Remove the Students section -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- banner section -->
+<section class="banner-section spad">
+  <div class="container">
+    <div class="section-title mb-0 pb-2">
+      <h2>Join Our Community Now!</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p>
+    </div>
+    <div class="text-center pt-5">
+      <a href="#" class="site-btn">Register Now</a>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>
+<!-- banner section end -->
+
+<script src="/assets/FrontOffice/js/jquery-3.2.1.min.js"></script>
+	<script src="/assets/FrontOffice/js/bootstrap.min.js"></script>
+	<script src="/assets/FrontOffice/js/mixitup.min.js"></script>
+	<script src="/assets/FrontOffice/js/circle-progress.min.js"></script>
+	<script src="/assets/FrontOffice/js/owl.carousel.min.js"></script>
+	<script src="/assets/FrontOffice/js/main.js"></script>

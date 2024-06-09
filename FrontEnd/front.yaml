@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pi-deployment2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: angular4
+  template:
+    metadata:
+      labels:
+        app: angular4
+    spec:
+      containers:
+      - name: pi-container
+        image: zakariabensalem98/pi:validation3  # L'image Docker que vous utilisez actuellement
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: angular-service
+spec:
+  selector:
+    app: angular4
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+  type: LoadBalancer
