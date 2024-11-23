@@ -47,3 +47,24 @@ Welcome to the **Study Hub** repository, part of the Integrated Project **Sky Hi
 ---
 
 ## 🎯 Objectives Achieved
+
+1. Enhanced accessibility to study spaces and resources.
+2. Improved organization in academic activities.
+3. Enabled seamless communication and collaboration.
+
+---
+
+## 📈 Personal Growth
+
+This project was a rewarding journey, improving skills in:
+- Cloud Computing
+- DevOps
+- Web Development
+
+---
+
+## 👨‍💻 Team Acknowledgment
+
+A big thank you to my **team members** and **mentors** for their support and guidance. This year has been an incredible learning experience.
+
+---
