@@ -57,7 +57,7 @@ Welcome to the **Study Hub** repository, part of the Integrated Project **Sky Hi
 ---
 
 ### Cluster Overview
-![Cluster Overview](assets/images/3.jpg)
+![Cluster Overview](assets/3.jpg)
 *Visual representation of the AKS cluster nodes and workloads distribution.*
 
 ---
@@ -84,11 +84,10 @@ Welcome to the **Study Hub** repository, part of the Integrated Project **Sky Hi
 
 #### Prometheus Dashboard
 ![Prometheus Dashboard](assets/6.jpg)
-![Grafana Dashboard](assets/7.jpg)
 *Prometheus dashboard displaying key metrics for application health.*
 
 #### Grafana Insights
-![Grafana Insights](assets/images/grafana-insights.png)
+![Grafana Dashboard](assets/7.jpg)
 *Grafana visualization providing detailed insights into application performance.*
 
 ---
